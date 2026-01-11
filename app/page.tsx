@@ -11,18 +11,27 @@ export default function IndexPage() {
         <div>
           <p className="text-sm font-bold">NO PAIN, NO SENSE</p>
           <h1 className="text-5xl font-black italic leading-tight tracking-tighter md:text-6xl flex align-top gap-2">
-            HAPTHOS <span className="text-sm font-light">*</span><br className="hidden sm:inline" />
+            SYMBFIT<br className="hidden sm:inline" />
           </h1>
         </div>
         <p className="text-md">
-          Peça de vestuário inteligente que usa feedback háptico para orientar a postura e melhorar a técnica durante o treino.
+          Peça de vestuário inteligente que usa feedback multissensorial para orientar a postura e melhorar a técnica durante o treino.
         </p>
         <ul className="flex flex-col gap-2">
           <li className="flex items-center gap-2"><Icons.activity className="h-5 w-5" />Otimização postural em tempo real</li>
           <li className="flex items-center gap-2"><Icons.brain className="h-5 w-5" />Aumento da consciência corporal</li>
           <li className="flex items-center gap-2"><Icons.shield className="h-5 w-5" />Prevenção ativa de lesões</li>
+          <li className="flex items-center gap-2"><Icons.pencil className="h-5 w-5" />Experiência personalizada</li>
         </ul>
-        <p className="text-muted-foreground text-xs">*nome provisório, ainda sob avaliação</p>
+        <Link
+          href="https://www.youtube.com/shorts/mgL6pSa-_Hg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={buttonVariants()}
+        >
+          Assitir à demo
+        </Link>
+        {/* <p className="text-muted-foreground text-xs">*nome provisório, ainda sob avaliação</p> */}
       </div>
       {/* <div className="flex gap-4">
         <Link
@@ -48,16 +57,23 @@ export default function IndexPage() {
         </h2>
         <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
           <h3 className="text-xl font-bold">Propósito</h3>
-          <p className="text-muted-foreground">Este projeto investiga de que forma o Design de Interação pode apoiar a correção de postura em contexto de musculação, através de uma peça de vestuário com feedback háptico.</p>
-          <div className="h-px w-full bg-gradient-to-r from-[hsl(78,69%,50%)] to-transparent"></div>
+          <p className="text-muted-foreground">Este projeto investiga de que forma o Design de Interação pode apoiar a correção de postura em contexto de musculação, através de uma peça de vestuário com feedback multissensorial.</p>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
           <p className="text-lg font-bold">Em vez de depender exclusivamente de espelhos, vídeos ou da presença constante de um treinador, a peça fornece um canal de comunicação direto com o corpo do utilizador, orientando pequenas correções ao longo do movimento.</p>
         </div>
         <div className="flex flex-col gap-4 w-full">
           <div className="w-full bg-secondary rounded-3xl flex flex-col items-start p-6 gap-2">
+            <Icons.audio className="h-8 w-8" />
+            <div className="gap-2">
+              <h3 className="text-xl font-bold">Áudio</h3>
+              <p className="text-muted-foreground">que corrige postura e amplitude de movimento.</p>
+            </div>
+          </div>
+          <div className="w-full bg-secondary rounded-3xl flex flex-col items-start p-6 gap-2">
             <Icons.vibration className="h-8 w-8" />
             <div className="gap-2">
               <h3 className="text-xl font-bold">Vibração</h3>
-              <p className="text-muted-foreground">que corrige postura e amplitude de movimento.</p>
+              <p className="text-muted-foreground">que auxilia na correção de postura e amplitude de movimento.</p>
             </div>
           </div>
           <div className="w-full bg-secondary rounded-3xl flex flex-col items-start p-6 gap-2">
@@ -76,7 +92,7 @@ export default function IndexPage() {
         <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
           <h3 className="text-xl font-bold">Erros Posturais</h3>
           <p className="text-muted-foreground">A peça de vestuário integra sensores que monitorizam a postura do utilizador durante exercícios de musculação.</p>
-          <div className="h-px w-full bg-gradient-to-r from-[hsl(78,69%,50%)] to-transparent"></div>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
           <p className="text-lg font-bold">Estes dados são recolhidos em tempo real e comparados com parâmetros de postura considerados adequados para cada tipo de exercício.</p>
         </div>
       </div>
@@ -85,10 +101,22 @@ export default function IndexPage() {
           OUTPUTS
         </h2>
         <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
+          <h3 className="text-xl font-bold">Feedback Visual</h3>
+          <p className="text-muted-foreground">Figuras ilustrativas do exercício a ser executado.</p>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
+          <p className="text-lg font-bold">O utilizador visualiza o exercício a executar na aplicação móvel que se conecta à peça de vestuário.</p>
+        </div>
+        <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
+          <h3 className="text-xl font-bold">Feedback Auditivo</h3>
+          <p className="text-muted-foreground">Quando é detetado um desvio relevante em relação à postura desejada, a peça responde com feedback auditivo.</p>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
+          <p className="text-lg font-bold">O resultado é um canal de comunicação imediato, discreto e verbal: o utilizador não precisa de olhar para um ecrã para perceber que algo precisa de ser ajustado.</p>
+        </div>
+        <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
           <h3 className="text-xl font-bold">Feedback Háptico</h3>
-          <p className="text-muted-foreground">Quando é detetado um desvio relevante em relação à postura desejada, a peça responde com feedback háptico.</p>
-          <div className="h-px w-full bg-gradient-to-r from-[hsl(78,69%,50%)] to-transparent"></div>
-          <p className="text-lg font-bold">O resultado é um canal de comunicação imediato, discreto e não verbal: o utilizador não precisa de olhar para um ecrã ou ouvir instruções para perceber que algo precisa de ser ajustado.</p>
+          <p className="text-muted-foreground">Para reforçar as instruções de áudio, a peça responde com feedback háptico.</p>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
+          <p className="text-lg font-bold">Contribui para ampliar a noção do utilizador de que algo precisa de ser ajustado.</p>
         </div>
       </div>
       <div className="flex flex-col gap-4" id="interacoes">
@@ -98,7 +126,7 @@ export default function IndexPage() {
         <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
           <h3 className="text-xl font-bold">Aprender Sentindo</h3>
           <p className="text-muted-foreground">A interação entre utilizador e peça de vestuário acontece num ciclo contínuo.</p>
-          <div className="h-px w-full bg-gradient-to-r from-[hsl(78,69%,50%)] to-transparent"></div>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
           <p className="text-lg font-bold">Com o tempo, o utilizador começa a antecipar correções, desenvolvendo maior consciência corporal e autonomia na execução dos exercícios.</p>
         </div>
         <div className="flex flex-col gap-4 w-full">
@@ -113,14 +141,14 @@ export default function IndexPage() {
             <Icons.posture className="h-8 w-8" />
             <div className="gap-2">
               <h3 className="text-xl font-bold">Preparação</h3>
-              <p className="text-muted-foreground">O utilizador ajusta a posição do corpo, sentindo a redução do feedback.</p>
+              <p className="text-muted-foreground">O utilizador ajusta a posição do corpo, consoante o feedback.</p>
             </div>
           </div>
           <div className="w-full bg-secondary rounded-3xl flex flex-col items-start p-6 gap-2">
             <Icons.muscle className="h-8 w-8" />
             <div className="gap-2">
               <h3 className="text-xl font-bold">Execução</h3>
-              <p className="text-muted-foreground">O utilizador executa o exercício, seguindo a direcionalidade do feedback.</p>
+              <p className="text-muted-foreground">O utilizador executa o exercício, seguindo o feedback.</p>
             </div>
           </div>
         </div>
@@ -132,8 +160,8 @@ export default function IndexPage() {
         <div className="bg-secondary rounded-3xl flex flex-col items-start p-6 gap-4">
           <h3 className="text-xl font-bold">Melhor Postura, Melhor Treino</h3>
           <p className="text-muted-foreground">A peça de vestuário propõe-se a acrescentar valor em diferentes dimensões.</p>
-          <div className="h-px w-full bg-gradient-to-r from-[hsl(78,69%,50%)] to-transparent"></div>
-          <p className="text-lg font-bold">Através de feedback háptico, o projeto procura criar uma experiência de treino mais consciente e mais eficiente.</p>
+          <div className="h-px w-full bg-gradient-to-r from-[hsl(14,100%,60%)] to-transparent"></div>
+          <p className="text-lg font-bold">Através de feedback multissensorial, o projeto procura criar uma experiência de treino mais consciente e mais eficiente.</p>
           <div>
             <h4 className="font-bold">20,08%</h4>
             <p className="text-muted-foreground">Taxa de abandono dos treinos, por conta de lesões</p>
